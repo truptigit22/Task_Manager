@@ -1,57 +1,30 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #eef1f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-    width: 50%;
-    margin: auto;
+    display: flex;
+    width: 70%;
+    gap: 20px;
+}
+
+.left-panel, .right-panel {
+    flex: 1;
     background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input, textarea, select, button {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 button {
-    background-color: #007BFF;
-    color: white;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    background: #fff;
-    padding: 10px;
-    margin: 10px 0;
-    border-left: 5px solid #007BFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-button.delete {
-    background-color: red;
+.hidden {
+    display: none;
 }
